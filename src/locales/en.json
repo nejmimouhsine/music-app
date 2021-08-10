@@ -1,0 +1,37 @@
+{
+  "auth": {
+    "account": "Your Account"
+  },
+  "button": {
+    "create": "Create My Account",
+    "submit": "Submit"
+  },
+  "form": {
+    "confirm": "Confirm",
+    "country": "Country",
+    "name": "Name",
+    "password": "Password"
+  },
+  "header": {
+    "login": "Login",
+    "logout": "Logout",
+    "manage": "Manage",
+    "register": "Register"
+  },
+  "home": {
+    "listen": "Listen to Great Music!",
+    "songs": "Songs"
+  },
+  "manage": {
+    "drop": "Drop your files here",
+    "my_songs": "My Songs",
+    "upload": "Upload"
+  },
+  "register": {
+    "TOS": "Terms of Service",
+    "accept": "I accept Music's {0}"
+  },
+  "song": {
+    "comment_count": "No Comments | 1 Comments | {count} Comments"
+  }
+}

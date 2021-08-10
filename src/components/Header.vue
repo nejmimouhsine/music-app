@@ -14,20 +14,15 @@
         <!-- Primary Navigation -->
         <ul class="flex flex-row mt-1">
           <!-- Navigation Links -->
-          <li>
-            <router-link class="px-2 text-white" :to="{ name: 'about' }">
-              About
-            </router-link>
-          </li>
           <li v-if="!userLoggedIn">
             <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal"
-              >Login / Register</a
+              >{{ $t('header.login') }} / {{ $t('header.register') }}</a
             >
           </li>
           <template v-else>
             <li>
               <router-link class="px-2 text-white" :to="{ name: 'manage' }">
-                Manage
+                {{ $t('header.manage') }}
               </router-link>
             </li>
             <li>
@@ -36,6 +31,13 @@
               </a>
             </li>
           </template>
+        </ul>
+        <ul class="flex flex-row mt-1 ml-auto">
+          <li>
+            <a href="#" class="px-2 text-white" @click.prevent="changeLocale">{{
+              currentLocale
+            }}</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -49,6 +51,9 @@ export default {
   name: 'Header',
   computed: {
     ...mapState(['userLoggedIn']),
+    currentLocale() {
+      return this.$i18n.locale === 'fr' ? 'French' : 'English';
+    },
   },
   methods: {
     ...mapMutations(['toggleAuthModal']),
@@ -57,6 +62,9 @@ export default {
         router: this.$router,
         route: this.$route,
       });
+    },
+    changeLocale() {
+      this.$i18n.locale = this.$i18n.locale === 'fr' ? 'en' : 'fr';
     },
   },
 };

@@ -1,0 +1,37 @@
+{
+  "auth": {
+    "account": "Votre Compte"
+  },
+  "button": {
+    "create": "Créer Mon Compte",
+    "submit": "Connexion"
+  },
+  "form": {
+    "confirm": "Confirmer votre",
+    "country": "Pays",
+    "name": "Nom Complet",
+    "password": "Mot de passe"
+  },
+  "header": {
+    "login": "Connecter",
+    "logout": "Déconnecter",
+    "manage": "Gérer vos chansons",
+    "register": "Créer un compte"
+  },
+  "home": {
+    "listen": "Écoutez de la bonne musique!",
+    "songs": "Chansons"
+  },
+  "manage": {
+    "drop": "Déposez vos fichiers ici",
+    "my_songs": "Mes Chansons",
+    "upload": "Télécharger"
+  },
+  "register": {
+    "TOS": "les Conditions d'Utilisation",
+    "accept": "J'accepte {0} de Music"
+  },
+  "song": {
+    "comment_count": "Pas de Commentaires | 1 Commentaire | {count} Commentaires"
+  }
+}

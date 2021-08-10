@@ -14,7 +14,7 @@
   >
     <!-- Name -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Name</label>
+      <label class="inline-block mb-2">{{ $t('form.name') }}</label>
       <vee-field
         type="text"
         name="name"
@@ -49,7 +49,7 @@
     </div>
     <!-- Password -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Password</label>
+      <label class="inline-block mb-2">{{ $t('form.password') }}</label>
       <vee-field name="password" :bails="false" v-slot="{ field, errors }">
         <input
           type="password"
@@ -65,7 +65,9 @@
     </div>
     <!-- Confirm Password -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Confirm Password</label>
+      <label class="inline-block mb-2"
+        >{{ $t('form.confirm') }} {{ $t('form.password') }}</label
+      >
       <vee-field
         type="password"
         name="confirm_password"
@@ -77,7 +79,7 @@
     </div>
     <!-- Country -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Country</label>
+      <label class="inline-block mb-2">{{ $t('form.country') }}</label>
       <vee-field
         as="select"
         name="country"
@@ -99,7 +101,9 @@
         value="1"
         class="w-4 h-4 float-left -ml-6 mt-1 rounded"
       />
-      <label class="inline-block">Accept terms of service</label>
+      <i18n-t class="inline-block" keypath="register.accept" tag="label">
+        <a href="#">{{ $t('register.TOS') }}</a>
+      </i18n-t>
       <ErrorMessage class="text-red-600 block" name="tos" />
     </div>
     <button
@@ -108,7 +112,7 @@
       class="block w-full bg-purple-600 text-white py-1.5 px-3 rounded transition
                 hover:bg-purple-700"
     >
-      Submit
+      {{ $t('button.create') }}
     </button>
   </vee-form>
 </template>
