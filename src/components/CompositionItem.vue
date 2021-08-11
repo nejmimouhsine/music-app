@@ -1,7 +1,12 @@
 <template>
   <div class="border border-gray-200 p-3 mb-4 rounded">
     <div v-show="!showForm">
-      <h4 class="inline-block text-2xl font-bold">{{ song.modified_name }}</h4>
+      <router-link
+        :to="{ name: 'song', params: { id: song.docID } }"
+        class="font-bold block text-gray-600"
+        >{{ song.modified_name }}</router-link
+      >
+      <!-- <h4 class="inline-block text-2xl font-bold">{{ song.modified_name }}</h4> -->
       <button
         class="ml-1 py-1 px-2 text-sm rounded text-white bg-red-600 float-right"
         @click.prevent="deleteSong"
