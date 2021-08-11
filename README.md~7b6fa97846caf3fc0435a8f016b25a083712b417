@@ -2,10 +2,10 @@
 
 #### Built With:
 
-- [Vue](https://v3.vuejs.org/)
-- [Vuex](https://vuex.vuejs.org/)
-- [Firebase](https://firebase.google.com/)
-- [Tailwind](https://tailwindcss.com/)
+* [Vue](https://v3.vuejs.org/)
+* [Vuex](https://vuex.vuejs.org/)
+* [Firebase](https://firebase.google.com/)
+* [Tailwind](https://tailwindcss.com/)
 
 ## Installation:
 
@@ -24,11 +24,11 @@ npm install
 
 3.Run the command bellow and go to [localhost:8080](localhost:8080) to view the app:
 
-`yarn serve`
+``` yarn serve ```
 
 Or:
 
-`npm run serve`
+``` npm run serve ```
 
 ## About the project:
 
@@ -60,9 +60,9 @@ NEJMI Mouhsine - [Linkedin](https://www.linkedin.com/in/mouhcine-nejmi/) - [nejm
 
 ## Acknowledgements:
 
-- [vercel](https://vercel.com/)
-- [VeeValidate](https://vee-validate.logaretm.com/v4/)
-- [Progressive Web Apps](https://web.dev/progressive-web-apps/)
-- [Font Awesome](https://fontawesome.com/)
-- [Howler](https://howlerjs.com/)
-- [Vue i18n](https://kazupon.github.io/vue-i18n/)
+* [vercel](https://vercel.com/)
+* [VeeValidate](https://vee-validate.logaretm.com/v4/)
+* [Progressive Web Apps](https://web.dev/progressive-web-apps/)
+* [Font Awesome](https://fontawesome.com/)
+* [Howler](https://howlerjs.com/)
+* [Vue i18n](https://kazupon.github.io/vue-i18n/)
