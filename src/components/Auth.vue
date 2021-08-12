@@ -2,7 +2,7 @@
   <!-- Auth Modal -->
   <div
     class="fixed z-50 inset-0 overflow-y-auto"
-    :class="{ hidden: !modal }"
+    :class="{ hidden: !authModalShow }"
     id="modal"
   >
     <div
@@ -89,7 +89,7 @@ export default {
   },
   computed: {
     ...mapState({
-      modal: 'authModalShow',
+      authModalShow: (state) => state.auth.authModalShow,
     }),
   },
   methods: {

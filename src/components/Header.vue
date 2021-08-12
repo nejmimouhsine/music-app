@@ -27,7 +27,7 @@
             </li>
             <li>
               <a class="px-2 text-white" href="#" @click.prevent="signout">
-                Logout
+                {{ $t('header.logout') }}
               </a>
             </li>
           </template>
@@ -50,7 +50,9 @@ import { mapMutations, mapState } from 'vuex';
 export default {
   name: 'Header',
   computed: {
-    ...mapState(['userLoggedIn']),
+    ...mapState({
+      userLoggedIn: (state) => state.auth.userLoggedIn,
+    }),
     currentLocale() {
       return this.$i18n.locale === 'fr' ? 'French' : 'English';
     },

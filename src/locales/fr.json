@@ -13,10 +13,10 @@
     "password": "Mot de passe"
   },
   "header": {
-    "login": "Connecter",
+    "login": "Se connecter",
     "logout": "Déconnecter",
     "manage": "Gérer vos chansons",
-    "register": "Créer un compte"
+    "register": "S'inscrire"
   },
   "home": {
     "listen": "Écoutez de la bonne musique!",
