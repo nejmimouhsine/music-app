@@ -4,11 +4,12 @@ import 'firebase/firestore';
 import 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBUoP7eLDUrUSJ_wr-RblMiOp5PdFIJl78',
-  authDomain: 'music-app-5c31b.firebaseapp.com',
-  projectId: 'music-app-5c31b',
-  storageBucket: 'music-app-5c31b.appspot.com',
-  appId: '1:677653537688:web:81d5c08e5dd91a514a01ed',
+  apiKey: 'AIzaSyCb6-XI3GDaBoIZb-qNId8R8SF5wpE2jRQ',
+  authDomain: 'music-app-51987.firebaseapp.com',
+  projectId: 'music-app-51987',
+  storageBucket: 'music-app-51987.appspot.com',
+  messagingSenderId: '978829240364',
+  appId: '1:978829240364:web:9a1ce899fed5a5d32c8989',
 };
 
 firebase.initializeApp(firebaseConfig);
